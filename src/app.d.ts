@@ -7,3 +7,9 @@ declare namespace App {
 	// interface PageData {}
 	// interface Platform {}
 }
+
+declare namespace svelte.JSX {
+	interface HTMLProps<T> {
+		onoutclick?: (e: CustomEvent<{ target: HTMLElement }>) => void;
+	}
+}
